@@ -13,6 +13,7 @@ import com.favorites.domain.Favorites;
 import com.favorites.repository.FavoritesRepository;
 import com.favorites.service.FavoritesService;
 import com.favorites.utils.DateUtils;
+import java.util.List;
 
 @Service("favoritesService")
 public class FavoritesServiceImpl implements FavoritesService{
@@ -66,5 +67,11 @@ public class FavoritesServiceImpl implements FavoritesService{
 		favorite.setLastModifyTime(DateUtils.getCurrentTime());
 		favoritesRepository.save(favorite);
 
+	}
+
+	//added search method
+	@Override
+	public List<Favorites> search(String keyword) {
+		return favoritesRepository.findByNameContainingIgnoreCase(keyword);
 	}
 }
