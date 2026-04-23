@@ -1,0 +1,11 @@
+/app/src/test/java/com/favorites/controller/HelloWorldControlerTests.java
+/app/src/test/java/com/favorites/domain/CollectorRepositoryTest.java
+/app/src/test/java/com/favorites/util/redis/TestRedis.java
+/app/src/test/java/com/favorites/domain/RepositoryTest.java
+/app/src/test/java/com/favorites/domain/UserRepositoryTests.java
+/app/src/test/java/com/favorites/util/html/HTMLParserExample1.java
+/app/src/test/java/com/favorites/FavoritesApplicationTests.java
+/app/src/test/java/com/favorites/util/html/HTMLParserExample2.java
+/app/src/test/java/com/favorites/domain/CollectRepositoryTest.java
+/app/src/test/java/com/favorites/util/TestString.java
+/app/src/test/java/com/favorites/util/html/HtmlUtilTest.java

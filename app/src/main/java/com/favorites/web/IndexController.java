@@ -309,5 +309,8 @@ public class IndexController extends BaseController{
 		model.addAttribute("configObj",config);
         return "collector";
     }
-
+	@RequestMapping("/about")
+		public String about() {
+  		  return "about";
+	}
 }

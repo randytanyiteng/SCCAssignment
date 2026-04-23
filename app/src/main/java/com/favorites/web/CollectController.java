@@ -77,6 +77,10 @@ public class CollectController extends BaseController{
 	@LoggerManage(description="文章收集")
 	public Response collect(Collect collect) {		
 		try {
+			String url = collect.getUrl();
+			if (StringUtils.isBlank(url) || !URLValidation.isValidUrl(url)) {
+				return result(ExceptionMsg.FAILED);
+			}
 			if(StringUtils.isBlank(collect.getLogoUrl()) || collect.getLogoUrl().length()>300){
 				collect.setLogoUrl(Const.BASE_PATH + Const.default_logo);
 			}

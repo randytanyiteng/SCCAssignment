@@ -23,6 +23,9 @@ public interface FavoritesRepository extends JpaRepository<Favorites, Long> {
 
 	List<Favorites> findByUserIdOrderByLastModifyTimeAsc(Long userId);
 
+	//added search method	
+	List<Favorites> findByNameContainingIgnoreCase(String keyword);
+
 	Favorites findByUserIdAndName(Long userId,String name);
 
 	@Modifying(clearAutomatically=true)
